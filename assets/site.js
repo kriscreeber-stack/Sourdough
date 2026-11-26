@@ -10,6 +10,22 @@
   const sampleNote = (list) => list.some((x) => x.example)
     ? '<p class="sample-note">These are example entries to show the layout. Real ones are coming soon.</p>' : "";
 
+  const bakerImplications = {
+    landis2021: ["Starter care", "Treat your starter as an individual: use a consistent feeding routine and note how long it takes to rise, when it peaks, and how it smells. Use those repeatable signs—not a universal clock—to decide when it is ready to leaven dough."],
+    reese2020: ["Starter care and flour choice", "For a reliable baseline, keep the flour and feeding routine steady while you learn how your starter behaves. If you change flour or routine, give the culture time to settle and observe it before changing several other variables."],
+    minervini2014: ["Starter feeding and fermentation planning", "Use feed ratio, temperature, hydration, flour, and refresh frequency as connected controls. A larger refresh generally gives the culture more fresh food and can take longer to peak; judge readiness by activity and your dough schedule rather than assuming a fixed ratio guarantees a particular flavour."],
+    devuyst2005: ["Starter maintenance", "Regular feeds and a reasonably consistent environment help keep a starter predictable. After a substantial change in flour, temperature, or feeding schedule, expect its rise pattern and aroma to shift temporarily; observe a few feeds before relying on your usual timing."],
+    ganzle1998: ["Bulk fermentation and proof timing", "Dough temperature changes fermentation speed, so use temperature to help plan your schedule. Warmer dough usually progresses faster and cooler dough more slowly; watch dough expansion and texture, and do not treat one study's organism-specific optimum as a universal home-baking target."],
+    ganzle2014: ["Bulk fermentation and cold proof", "Fermentation time and temperature shape acidity and aroma. A cool, longer proof can develop flavour, but it also extends fermentation: monitor dough strength and proof rather than extending time blindly, especially if the dough is already very active."],
+    arendt2007: ["Bulk fermentation and dough handling", "Acidity and enzyme activity affect dough strength and crumb. If a loaf spreads or feels slack, compare dough temperature and bulk-fermentation progress across bakes; over-fermentation is one possibility, but flour strength, hydration, and shaping also matter."],
+    rizzello2007: ["Safety and claims about the finished loaf", "This study used selected cultures and controlled processing, so it does not show that an ordinary home sourdough becomes gluten-free. Sourdough bread is not safe for someone with coeliac disease; use medically appropriate gluten-free food and avoid cross-contamination."],
+    scazzina2009: ["Choosing and eating the finished loaf", "The reported blood-glucose response is a result from a specific comparison, not a promise for every sourdough or person. Flour, recipe, fermentation, serving size, and individual health all matter; do not use this study to make treatment decisions."],
+    "ka-create": ["Building a starter", "Use the guide's day-by-day signs to follow activity, but allow for variation in room temperature and flour. A new starter may have an early burst and then quieten; wait for dependable, repeated rising after feeds before relying on it to raise bread."],
+    "ka-maintain": ["Starter storage and refresh before baking", "A refrigerated routine can reduce daily maintenance for occasional bakers. Refresh the starter ahead of mixing and check that it has regained reliable activity; adjust the lead time to your kitchen temperature and the starter's response."],
+    "perfectloaf-starter": ["Building a starter and choosing flour", "Whole-grain flour, including rye, can provide a nutrient-rich start, but it is not essential and a starter can behave differently with different flours. Choose a flour you can keep using, and track rise and aroma as it develops."],
+    "ka-bakers-pct": ["Scaling and mixing the dough", "Baker's percentages make it easier to scale a formula while preserving ingredient proportions. Scale every ingredient against total flour, and remember that starter contains both flour and water—include those amounts in the formula when calculating true hydration." ]
+  };
+
   function bakeCard(b, recipes) {
     const recipe = recipes.find((r) => r.id === b.recipe);
     const photo = b.photo
@@ -17,7 +33,7 @@
       : `<div class="photo" aria-hidden="true">Photo to come</div>`;
     return `<article class="bake">
       ${photo}
-      <div class="meta"><time datetime="${esc(b.date)}">${esc(fmtDate(b.date))}</time>${recipe ? `<span>${esc(recipe.name)}</span>` : ""}<span class="rating" aria-label="Rated ${b.rating} of 5">${"●".repeat(b.rating || 0)}${"○".repeat(5 - (b.rating || 0))}</span></div>
+      <div class="meta"><time datetime="${esc(b.date)}">${esc(fmtDate(b.date))}</time>${recipe ? `<span>${esc(recipe.name)}</span>` : ""}<span class="rating" aria-label="Rated ${b.rating} of 5">${[...Array(5)].map((_, i) => i < b.rating ? "★" : "☆").join("")}</span></div>
       <h3>${esc(b.title)}</h3>
       <p>${esc(b.summary)}</p>
       ${b.nextTime ? `<p class="when">Next time: ${esc(b.nextTime)}</p>` : ""}
@@ -47,11 +63,16 @@
 
   function researchEntry(entry) {
     const year = entry.year == null ? "Year not listed" : String(entry.year);
+    const implication = entry.homeBaker || bakerImplications[entry.id];
+    const bakerNote = implication
+      ? `<section class="home-baker"><h3>What does this mean for the home baker?</h3><p class="when">Relevant stage: ${esc(implication[0])}</p><p>${esc(implication[1])}</p></section>`
+      : entry.takeaway ? `<section class="home-baker"><h3>What does this mean for the home baker?</h3><p>${esc(entry.takeaway)}</p></section>` : "";
     return `<article class="research-entry">
       <div class="research-meta"><span class="tag">${esc(entry.type || "Resource")}</span><span>${esc(entry.publisher || "")}</span><span>${esc(year)}</span></div>
       <h2>${esc(entry.title)}</h2>
       <p class="research-author">${esc(entry.authors)}</p>
       <p>${esc(entry.summary)}</p>
+      ${bakerNote}
       <a href="${esc(entry.url)}" target="_blank" rel="noopener noreferrer">Read the original source <span aria-hidden="true">↗</span></a>
     </article>`;
   }
