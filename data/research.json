@@ -1,0 +1,201 @@
+[
+  {
+    "id": "landis2021",
+    "title": "The diversity and function of sourdough starter microbiomes",
+    "authors": "Landis, Oliverio, McKenney, Nichols, Dunn et al.",
+    "year": 2021,
+    "publisher": "eLife",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "microbiology"
+    ],
+    "url": "https://elifesciences.org/articles/61644",
+    "summary": "The Global Sourdough Project sequenced around 500 home starters from four continents. Starters held a few dominant species of lactic acid bacteria and yeast, with fewer than 10 common bacterial species in most. Geography explained surprisingly little. Lab-built communities showed that the mix of microbes changes how fast a starter rises and how it smells.",
+    "takeaway": "Every starter is its own ecosystem. Rise, time to peak and smell are the outward signs of which microbes are winning, so they are worth noting at every feed."
+  },
+  {
+    "id": "reese2020",
+    "title": "Influences of ingredients and bakers on the bacteria and fungi in sourdough starters and bread",
+    "authors": "Reese, Madden, Joossens, Lacaze, Dunn",
+    "year": 2020,
+    "publisher": "mSphere",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "flour",
+      "microbiology"
+    ],
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6968659/",
+    "summary": "Fifteen bakers in different countries made starters from the same flour, using the same method. The starters were similar but not identical, and the bakers' own hands carried microbes that also turned up in their starters and bread.",
+    "takeaway": "The same flour and method get you most of the way to a repeatable starter. Keeping the flour brand and feeding routine fixed helps while learning."
+  },
+  {
+    "id": "minervini2014",
+    "title": "Ecological parameters influencing microbial diversity and stability of traditional sourdough",
+    "authors": "Minervini, De Angelis, Di Cagno, Gobbetti",
+    "year": 2014,
+    "publisher": "International Journal of Food Microbiology",
+    "type": "Review",
+    "topics": [
+      "starter",
+      "flour",
+      "temperature"
+    ],
+    "url": "https://www.pubmed.gov/24355817/",
+    "summary": "Reviews what keeps a sourdough's microbes stable over time: flour type, hydration, temperature, how much old starter is carried over in each feed, and how often it is fed. Firm (lower hydration) and liquid starters behave differently.",
+    "takeaway": "Feeding ratio and timing matter as much as flour. A bigger dilution (like 1:5:5) slows the starter down and makes it milder; a smaller one (1:1:1) peaks sooner and turns sourer."
+  },
+  {
+    "id": "devuyst2005",
+    "title": "The sourdough microflora: biodiversity and metabolic interactions",
+    "authors": "De Vuyst, Neysens",
+    "year": 2005,
+    "publisher": "Trends in Food Science & Technology",
+    "type": "Review",
+    "topics": [
+      "microbiology",
+      "starter"
+    ],
+    "url": "https://ibl.kb.nl/article/0000000010850/16/1-3/12/lang/uk",
+    "summary": "A classic overview of which lactic acid bacteria and yeasts live in sourdough and how they cooperate. The bacteria and yeasts mostly use different sugars, so they compete less than you'd expect and form stable partnerships when fed regularly.",
+    "takeaway": "A regularly fed starter settles into a stable community. Irregular feeding or big changes in flour or temperature can shift it, so expect a few unsettled days after any change."
+  },
+  {
+    "id": "ganzle1998",
+    "title": "Modeling of growth of Lactobacillus sanfranciscensis and Candida milleri in response to process parameters of sourdough fermentation",
+    "authors": "Gänzle, Ehmann, Hammes",
+    "year": 1998,
+    "publisher": "Applied and Environmental Microbiology",
+    "type": "Study",
+    "topics": [
+      "temperature",
+      "starter",
+      "microbiology"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC106434",
+    "summary": "Measured how temperature, pH and acid levels change the growth of a typical sourdough bacterium and yeast. The bacterium grows best around 32 °C, while the yeast prefers about 27 °C and is held back above roughly 34 °C. Warmer fermentations favour acid, cooler ones give the yeast relatively more room.",
+    "takeaway": "Temperature is the main dial for flavour and timing. Warmer dough (26 to 28 °C) ferments faster and tangier; cooler dough is slower and milder."
+  },
+  {
+    "id": "ganzle2014",
+    "title": "Enzymatic and bacterial conversions during sourdough fermentation",
+    "authors": "Gänzle",
+    "year": 2014,
+    "publisher": "Food Microbiology",
+    "type": "Review",
+    "topics": [
+      "flour",
+      "fermentation",
+      "flavour"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24230468/",
+    "summary": "Explains what happens chemically during fermentation: the flour's own enzymes break down starch and protein, while bacteria turn sugars into lactic and acetic acid and release flavour building blocks. Acidity steers which enzymes work, which shapes texture, flavour and shelf life.",
+    "takeaway": "Much of sourdough flavour comes from time and acidity working together. Longer, cooler fermentations (like an overnight cold proof) build more flavour."
+  },
+  {
+    "id": "arendt2007",
+    "title": "Impact of sourdough on the texture of bread",
+    "authors": "Arendt, Ryan, Dal Bello",
+    "year": 2007,
+    "publisher": "Food Microbiology",
+    "type": "Review",
+    "topics": [
+      "texture",
+      "hydration",
+      "fermentation"
+    ],
+    "url": "https://research.ucc.ie/en/publications/impact-of-sourdough-on-the-texture-of-bread/",
+    "summary": "Looks at how acid and enzyme activity in sourdough change dough strength, loaf volume, crumb softness and staling. Moderate acidity improves the dough, while too much acid or over-fermentation weakens the gluten and lowers volume.",
+    "takeaway": "A dense or flat loaf after a long, warm bulk ferment is often over-fermented, not under-fermented. Comparing bulk times and dough temperatures across bakes helps find the sweet spot."
+  },
+  {
+    "id": "rizzello2007",
+    "title": "Highly efficient gluten degradation by lactobacilli and fungal proteases during food processing",
+    "authors": "Rizzello, De Angelis, Di Cagno, Gobbetti et al.",
+    "year": 2007,
+    "publisher": "Applied and Environmental Microbiology",
+    "type": "Study",
+    "topics": [
+      "health",
+      "fermentation"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1932817",
+    "summary": "Showed that selected lactic acid bacteria plus fungal enzymes, given a long fermentation, can break wheat gluten down almost completely. This is a lab process with special cultures, not ordinary home sourdough.",
+    "takeaway": "Normal sourdough is not safe for people with coeliac disease. Special lab processes are needed to break gluten down that far."
+  },
+  {
+    "id": "scazzina2009",
+    "title": "Sourdough bread: starch digestibility and postprandial glycemic response",
+    "authors": "Scazzina, Del Rio, Pellegrini, Brighenti",
+    "year": 2009,
+    "publisher": "Journal of Cereal Science",
+    "type": "Study",
+    "topics": [
+      "health"
+    ],
+    "url": "https://www.sourdough.co.uk/research/sourdough-bread-starch-digestibility-and-postprandial-glycemic-response/",
+    "summary": "Compared sourdough and yeasted breads in people. Sourdough bread gave a lower blood sugar response, which the authors link to the acids formed during fermentation slowing starch digestion.",
+    "takeaway": "An interesting finding, but keep claims modest: the effect depends on the flour and the process."
+  },
+  {
+    "id": "ka-create",
+    "title": "Sourdough baking: creating a starter",
+    "authors": "King Arthur Baking",
+    "year": null,
+    "publisher": "King Arthur Baking",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "beginner"
+    ],
+    "url": "https://www.kingarthurbaking.com/guides/sourdough/create",
+    "summary": "A step-by-step guide to making a starter from flour and water over about a week, with what to expect each day, how to tell when it's ready, and fixes for common problems such as hooch and slow starters.",
+    "takeaway": "A trustworthy day-by-day plan for a first starter. A starter is ready when it reliably doubles within 4 to 8 hours of a feed."
+  },
+  {
+    "id": "ka-maintain",
+    "title": "Sourdough baking: maintaining a starter",
+    "authors": "King Arthur Baking",
+    "year": null,
+    "publisher": "King Arthur Baking",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "beginner"
+    ],
+    "url": "https://www.kingarthurbaking.com/learn/guides/sourdough/maintain",
+    "summary": "How to keep a starter at room temperature or in the fridge, how much to discard and feed, and how to revive one that has slowed down.",
+    "takeaway": "For weekly baking, a starter kept in the fridge, fed once a week and refreshed a day before baking, is a low-effort routine."
+  },
+  {
+    "id": "perfectloaf-starter",
+    "title": "7 easy steps to making an incredible sourdough starter from scratch",
+    "authors": "Maurizio Leo",
+    "year": null,
+    "publisher": "The Perfect Loaf",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "beginner"
+    ],
+    "url": "https://www.theperfectloaf.com/7-easy-steps-making-incredible-sourdough-starter-scratch/",
+    "summary": "A widely used home-baker guide to building a starter with whole grain flour, with photos of each stage and the signs to watch for.",
+    "takeaway": "Whole grain (especially rye) helps a new starter get going faster because it brings more nutrients and microbes."
+  },
+  {
+    "id": "ka-bakers-pct",
+    "title": "Baker's percentage",
+    "authors": "King Arthur Baking",
+    "year": null,
+    "publisher": "King Arthur Baking",
+    "type": "Guide",
+    "topics": [
+      "hydration",
+      "scaling"
+    ],
+    "url": "https://www.kingarthurbaking.com/pro/reference/bakers-percentage",
+    "summary": "Explains baker's percentages: every ingredient written as a percentage of total flour weight. It makes recipes easy to compare and to scale to any batch size.",
+    "takeaway": "This is the language for scaling a recipe up to bigger batches. The Recipes page on this site shows these percentages for every recipe."
+  }
+]
