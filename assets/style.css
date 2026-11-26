@@ -110,6 +110,16 @@ ol.method { margin: 0; padding-left: 1.3rem; display: grid; gap: .8rem; }
 ol.method li::marker { font-family: var(--font-data); color: var(--crust); }
 .when { font-family: var(--font-data); font-size: .82rem; color: var(--muted); display: block; }
 
+/* Research */
+.research-list { display: grid; }
+.research-entry { display: grid; gap: .75rem; padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+.research-entry:first-child { padding-top: 0; }
+.research-entry h2 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
+.research-entry > p { max-width: 72ch; }
+.research-meta { display: flex; align-items: center; gap: .4rem .8rem; flex-wrap: wrap; color: var(--muted); font-size: .85rem; }
+.research-author { color: var(--muted); font-size: .95rem; }
+.research-entry > a { width: fit-content; font-weight: 600; }
+
 /* Order (phase 2) */
 .menu { display: grid; gap: 0; }
 .menu-item { display: grid; grid-template-columns: 1fr auto; gap: .25rem 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
