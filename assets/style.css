@@ -149,3 +149,36 @@ figure.photo { margin: 0; }
   .hero-photo { max-width: 340px; justify-self: center; order: -1; aspect-ratio: 4 / 3 !important; }
   .photo.wide { aspect-ratio: 16 / 10; }
 }
+
+/* How to start(er) */
+.jump { display: flex; flex-wrap: wrap; gap: .5rem; }
+.jump a { text-decoration: none; font-weight: 500; font-size: .92rem; padding: .35rem .85rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); }
+.jump a:hover { border-color: var(--crust); }
+.starter-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.starter-card { display: grid; gap: .6rem; align-content: start; padding: 1.4rem; background: var(--surface); border-radius: var(--radius); color: var(--ink); text-decoration: none; border: 1px solid transparent; }
+.starter-card:hover { border-color: var(--crust); }
+.starter-card .letter { width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--crust); color: var(--crust-ink); display: grid; place-items: center; font-family: var(--font-display); font-size: 1.2rem; }
+.starter-card p { color: var(--muted); font-size: .98rem; }
+.facts { margin: .25rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .9rem; font-size: .88rem; }
+.facts dt { color: var(--muted); font-weight: 600; }
+.facts dd { margin: 0; }
+.starter-title { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+h4 { font-family: var(--font-display); font-weight: 400; font-size: 1.2rem; margin: 0; }
+.starter-recipe { scroll-margin-top: 1rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+ul.ticks { margin: 0; padding-left: 1.2rem; display: grid; gap: .55rem; }
+ul.ticks li::marker { color: var(--crust); }
+.principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 2.5rem; }
+.principles article { display: grid; gap: .45rem; align-content: start; padding-top: 1rem; border-top: 2px solid var(--crust); }
+.principles p { font-size: .98rem; }
+.source-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.source-col { display: grid; gap: 1.25rem; min-width: 0; }
+.col-head { font-size: 1.5rem; padding-bottom: .75rem; border-bottom: 2px solid var(--crust); }
+.source-col .research-entry h2 { font-size: 1.3rem; }
+.research-entry { scroll-margin-top: 1rem; }
+.home-baker { display: grid; gap: .35rem; background: var(--surface); border-radius: var(--radius); padding: 1rem 1.1rem; }
+.home-baker h3 { font-size: 1.05rem; }
+@media (max-width: 900px) { .starter-cards { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .two-col, .principles, .source-cols { grid-template-columns: 1fr; } }
+.starter-recipe .recipe > .stack { align-content: start; }
+.starter-recipe .notice p { font-size: .98rem; }

@@ -67,13 +67,45 @@
     const bakerNote = implication
       ? `<section class="home-baker"><h3>What does this mean for the home baker?</h3><p class="when">Relevant stage: ${esc(implication[0])}</p><p>${esc(implication[1])}</p></section>`
       : entry.takeaway ? `<section class="home-baker"><h3>What does this mean for the home baker?</h3><p>${esc(entry.takeaway)}</p></section>` : "";
-    return `<article class="research-entry">
+    return `<article class="research-entry" id="src-${esc(entry.id)}">
       <div class="research-meta"><span class="tag">${esc(entry.type || "Resource")}</span><span>${esc(entry.publisher || "")}</span><span>${esc(year)}</span></div>
       <h2>${esc(entry.title)}</h2>
       <p class="research-author">${esc(entry.authors)}</p>
       <p>${esc(entry.summary)}</p>
       ${bakerNote}
       <a href="${esc(entry.url)}" target="_blank" rel="noopener noreferrer">Read the original source <span aria-hidden="true">↗</span></a>
+    </article>`;
+  }
+
+
+  function starterCard(s) {
+    return `<a class="starter-card" href="#${esc(s.id)}">
+      <span class="letter" aria-hidden="true">${esc(s.letter)}</span>
+      <h3>${esc(s.name)}</h3>
+      <p>${esc(s.tagline)}</p>
+      <dl class="facts"><dt>Flour</dt><dd>${esc(s.flour)}</dd><dt>Hydration</dt><dd>${esc(s.hydration)}</dd><dt>Warmth</dt><dd>${esc(s.temperature)}</dd><dt>Timeline</dt><dd>${esc(s.expected)}</dd></dl>
+    </a>`;
+  }
+
+  function starterBlock(s, research) {
+    const flour = s.day1.filter((i) => i.flour).reduce((a, i) => a + i.grams, 0);
+    const rows = s.day1.map((i) => `<tr><td>${esc(i.name)}</td><td class="num">${i.grams} g</td><td class="num">${Math.round((i.grams / flour) * 1000) / 10}%</td></tr>`).join("");
+    const steps = s.schedule.map((m) => `<li><span class="when">${esc(m.when)}</span>${esc(m.step)}</li>`).join("");
+    const based = s.basedOn.map((id) => research.find((r) => r.id === id)).filter(Boolean)
+      .map((r) => `<a href="#src-${esc(r.id)}">${esc(r.short || (r.type === "Study" || r.type === "Review" ? r.authors.split(",")[0] + (r.year ? " " + r.year : "") : r.publisher))}</a>`).join(", ");
+    return `<article class="stack starter-recipe" id="${esc(s.id)}">
+      <div class="stack" style="gap:.5rem"><span class="eyebrow">Starter ${esc(s.letter)} · ${esc(s.expected)}</span><h3 class="starter-title">${esc(s.name)}</h3><p>${esc(s.why)}</p>${based ? `<p class="when">Based on: ${based}</p>` : ""}</div>
+      <div class="recipe">
+        <div class="stack"><h4>Day 1 mix</h4>
+          <div class="table-scroll"><table class="formula">
+            <thead><tr><th>Ingredient</th><th class="num">Weight</th><th class="num">Baker's %</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table></div>
+          <p class="when">Baker's percentages are relative to total flour (${flour} g = 100%).</p>
+          <div class="notice"><strong>Journal tip</strong><p>${esc(s.journal)}</p></div>
+        </div>
+        <div class="stack"><h4>Schedule</h4><ol class="method">${steps}</ol></div>
+      </div>
     </article>`;
   }
 
@@ -98,6 +130,14 @@
     nav.insertBefore(link, about || null);
   }
 
+  // Keep the How to start(er) page in the shared navigation on every page.
+  if (nav && !nav.querySelector('a[href="starter.html"]')) {
+    const link = document.createElement("a");
+    link.href = "starter.html";
+    link.textContent = "How to start(er)";
+    nav.insertBefore(link, nav.querySelector('a[href="research.html"]') || null);
+  }
+
   const bakesEl = document.getElementById("bakes");
   const recipesEl = document.getElementById("recipes");
   const researchEl = document.getElementById("research");
@@ -120,6 +160,19 @@
     load("research.json").then((entries) => {
       researchEl.innerHTML = `<div class="research-list">${entries.map(researchEntry).join("")}</div>`;
     }).catch(() => fail(researchEl));
+  }
+  const startersEl = document.getElementById("starters");
+  if (startersEl) {
+    const sci = document.getElementById("starter-science");
+    const bak = document.getElementById("starter-bakers");
+    Promise.all([load("starters.json"), load("research.json")]).then(([starters, research]) => {
+      startersEl.innerHTML = `<div class="starter-cards">${starters.map(starterCard).join("")}</div>
+        <div class="stack" style="gap:4rem;margin-top:3rem">${starters.map((s) => starterBlock(s, research)).join("")}</div>`;
+      const pick = (side) => research.filter((r) => r.starterPage === side).sort((a, b) => (a.starterOrder || 99) - (b.starterOrder || 99));
+      if (sci) sci.innerHTML = `<div class="research-list">${pick("science").map(researchEntry).join("")}</div>`;
+      if (bak) bak.innerHTML = `<div class="research-list">${pick("bakers").map(researchEntry).join("")}</div>`;
+      if (location.hash) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
+    }).catch(() => fail(startersEl));
   }
   if (menuEl) {
     load("menu.json").then((m) => { menuEl.innerHTML = menuBlock(m); }).catch(() => fail(menuEl));

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "starter-a-rye",
+    "letter": "A",
+    "name": "Rye quick-start",
+    "tagline": "The fastest, most forgiving start. Whole rye carries the most microbes and food.",
+    "flour": "Whole rye flour (Roggenvollkornmehl)",
+    "hydration": "100%",
+    "temperature": "24 to 26 °C",
+    "expected": "Ready in about 7 to 10 days",
+    "basedOn": ["seriouseats-flour", "modernist-starter", "lau2021", "davis-rye", "perfectloaf-starter"],
+    "why": "Every flour test we found put rye first for speed, and the science explains why: rye and other high-bran flours bring more minerals, more sugars and more microbes. This is the starter most likely to work first time.",
+    "day1": [
+      { "name": "Whole rye flour", "grams": 50, "flour": true },
+      { "name": "Water, about 26 °C", "grams": 50 }
+    ],
+    "schedule": [
+      { "when": "Day 1, 19:00", "step": "Stir 50 g whole rye and 50 g water into a thick paste in a clean straight-sided jar. Mark the level with a rubber band. Cover loosely and keep at 24 to 26 °C." },
+      { "when": "Days 2 to 5, 19:00", "step": "Once a day: keep 25 g, discard the rest, and feed 50 g rye and 50 g water (1:2:2). A big rise on day 2 is bacteria, not yeast; a quiet day 3 or 4 is normal. Don't feed more often yet." },
+      { "when": "From the first clear rise after day 4", "step": "Feed twice a day, 07:00 and 19:00: keep 20 g, add 40 g rye and 40 g water (1:2:2)." },
+      { "when": "Ready", "step": "It at least doubles within 6 to 8 hours of a feed, three feeds in a row, and smells sour and fruity, not of nail polish or old cheese." },
+      { "when": "After that", "step": "Keep it in the fridge and feed once a week at 1:2:2. To bake, take it out the night before and give it one or two feeds at room temperature." }
+    ],
+    "journal": "Rye is thick, so it rises less than a wheat starter. Compare it against itself from feed to feed, not against B and C."
+  },
+  {
+    "id": "starter-b-juice",
+    "letter": "B",
+    "name": "Juice start, whole wheat",
+    "tagline": "Skips the false rise by starting acidic, following a microbiologist's method.",
+    "flour": "Whole wheat flour (Weizenvollkornmehl), then half-white (Halbweissmehl)",
+    "hydration": "200% for 3 days, then 100%",
+    "temperature": "24 to 26 °C, never above 27 °C",
+    "expected": "Yeast by day 3 to 5, ready in about 10 to 14 days",
+    "basedOn": ["wink2008-part1", "wink2008-part2", "boreczek2020", "ercolini2013"],
+    "why": "Most new starters are taken over in the first days by gassy flour bacteria that give a false rise and odd smells. Starting with unsweetened pineapple juice makes the mix acidic from day one, so those bacteria never get going and the real sourdough microbes arrive sooner.",
+    "day1": [
+      { "name": "Whole wheat flour", "grams": 15, "flour": true },
+      { "name": "Unsweetened pineapple juice", "grams": 30 }
+    ],
+    "schedule": [
+      { "when": "Day 1, 19:00", "step": "Mix 15 g whole wheat flour and 30 g unsweetened pineapple juice (100% juice, from a carton is fine). Cover loosely, keep at 24 to 26 °C, and stir once in the morning." },
+      { "when": "Days 2 and 3, 19:00", "step": "Add 15 g whole wheat and 30 g juice. Don't discard. Stir well." },
+      { "when": "Day 4 onwards, 19:00", "step": "Switch to water. Once a day: keep 55 g, discard the rest, and feed 28 g whole wheat and 28 g water. Carry on until it clearly expands and smells yeasty." },
+      { "when": "Once it rises", "step": "Feed twice a day, 07:00 and 19:00, on half-white flour: keep 20 g, add 40 g Halbweissmehl and 40 g water (1:2:2)." },
+      { "when": "Ready", "step": "It at least doubles within 6 to 8 hours of a feed, three feeds in a row, with a pleasant yoghurt-like tang." },
+      { "when": "If it stalls", "step": "If nothing happens for three days after day 4, skip one feed to let the acid build, then use whole wheat for a couple of feeds." }
+    ],
+    "journal": "Note the day the first real rise appears. Compare it with A and C: if the juice works, B should skip the day-2 burst."
+  },
+  {
+    "id": "starter-c-5050",
+    "letter": "C",
+    "name": "Half and half, slow and steady",
+    "tagline": "The everyday baker's starter. Mild, lively, and built to fit a working week.",
+    "flour": "50% whole wheat (Weizenvollkornmehl) and 50% half-white (Halbweissmehl)",
+    "hydration": "100%",
+    "temperature": "24 to 26 °C",
+    "expected": "Ready in about 10 to 14 days",
+    "basedOn": ["seriouseats-flour", "atk-starter", "ka-create", "wildyeast-raising", "minervini2014"],
+    "why": "A blend of whole grain and white is what most professional bakers keep, and in a side-by-side test it made the best-tasting loaf. The feeds start small and step up as the starter gets stronger, the way the research suggests, so it ends on a 1:5:5 ratio that peaks about 12 hours later: one feed before work, bake-ready by evening.",
+    "day1": [
+      { "name": "Whole wheat flour", "grams": 25, "flour": true },
+      { "name": "Half-white flour", "grams": 25, "flour": true },
+      { "name": "Water, about 26 °C", "grams": 50 }
+    ],
+    "schedule": [
+      { "when": "Day 1, 19:00", "step": "Mix the two flours with the water. Cover loosely and leave for 48 hours at 24 to 26 °C. Stir once a day." },
+      { "when": "Days 3 and 4, 19:00", "step": "Once a day: keep 20 g, discard the rest, and feed 20 g flour mix and 20 g water (1:1:1)." },
+      { "when": "Days 5 to 7", "step": "Twice a day, 07:00 and 19:00, still at 1:1:1." },
+      { "when": "When it doubles within 12 hours", "step": "Step up to 1:2:2: keep 20 g, feed 40 g flour mix and 40 g water, twice a day." },
+      { "when": "When it doubles within 8 hours at 1:2:2", "step": "It is ready. Try 1:5:5 (10 g starter, 50 g flour mix, 50 g water). It should peak in about 10 to 12 hours, which is the routine to keep." },
+      { "when": "After that", "step": "Fridge, fed once a week. Two room-temperature feeds before a bake day." }
+    ],
+    "journal": "Note the date each step-up becomes possible. That is how you will see C getting stronger."
+  }
+]

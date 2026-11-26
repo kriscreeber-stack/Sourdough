@@ -12,7 +12,9 @@
     ],
     "url": "https://elifesciences.org/articles/61644",
     "summary": "The Global Sourdough Project sequenced around 500 home starters from four continents. Starters held a few dominant species of lactic acid bacteria and yeast, with fewer than 10 common bacterial species in most. Geography explained surprisingly little. Lab-built communities showed that the mix of microbes changes how fast a starter rises and how it smells.",
-    "takeaway": "Every starter is its own ecosystem. Rise, time to peak and smell are the outward signs of which microbes are winning, so they are worth noting at every feed."
+    "takeaway": "Every starter is its own ecosystem. Rise, time to peak and smell are the outward signs of which microbes are winning, so they are worth noting at every feed.",
+    "starterPage": "science",
+    "starterOrder": 5
   },
   {
     "id": "reese2020",
@@ -28,7 +30,9 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6968659/",
     "summary": "Fifteen bakers in different countries made starters from the same flour, using the same method. The starters were similar but not identical, and the bakers' own hands carried microbes that also turned up in their starters and bread.",
-    "takeaway": "The same flour and method get you most of the way to a repeatable starter. Keeping the flour brand and feeding routine fixed helps while learning."
+    "takeaway": "The same flour and method get you most of the way to a repeatable starter. Keeping the flour brand and feeding routine fixed helps while learning.",
+    "starterPage": "science",
+    "starterOrder": 6
   },
   {
     "id": "minervini2014",
@@ -44,7 +48,9 @@
     ],
     "url": "https://www.pubmed.gov/24355817/",
     "summary": "Reviews what keeps a sourdough's microbes stable over time: flour type, hydration, temperature, how much old starter is carried over in each feed, and how often it is fed. Firm (lower hydration) and liquid starters behave differently.",
-    "takeaway": "Feeding ratio and timing matter as much as flour. A bigger dilution (like 1:5:5) slows the starter down and makes it milder; a smaller one (1:1:1) peaks sooner and turns sourer."
+    "takeaway": "Feeding ratio and timing matter as much as flour. A bigger dilution (like 1:5:5) slows the starter down and makes it milder; a smaller one (1:1:1) peaks sooner and turns sourer.",
+    "starterPage": "science",
+    "starterOrder": 8
   },
   {
     "id": "devuyst2005",
@@ -59,7 +65,9 @@
     ],
     "url": "https://ibl.kb.nl/article/0000000010850/16/1-3/12/lang/uk",
     "summary": "A classic overview of which lactic acid bacteria and yeasts live in sourdough and how they cooperate. The bacteria and yeasts mostly use different sugars, so they compete less than you'd expect and form stable partnerships when fed regularly.",
-    "takeaway": "A regularly fed starter settles into a stable community. Irregular feeding or big changes in flour or temperature can shift it, so expect a few unsettled days after any change."
+    "takeaway": "A regularly fed starter settles into a stable community. Irregular feeding or big changes in flour or temperature can shift it, so expect a few unsettled days after any change.",
+    "starterPage": "science",
+    "starterOrder": 9
   },
   {
     "id": "ganzle1998",
@@ -75,7 +83,9 @@
     ],
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC106434",
     "summary": "Measured how temperature, pH and acid levels change the growth of a typical sourdough bacterium and yeast. The bacterium grows best around 32 °C, while the yeast prefers about 27 °C and is held back above roughly 34 °C. Warmer fermentations favour acid, cooler ones give the yeast relatively more room.",
-    "takeaway": "Temperature is the main dial for flavour and timing. Warmer dough (26 to 28 °C) ferments faster and tangier; cooler dough is slower and milder."
+    "takeaway": "Temperature is the main dial for flavour and timing. Warmer dough (26 to 28 °C) ferments faster and tangier; cooler dough is slower and milder.",
+    "starterPage": "science",
+    "starterOrder": 7
   },
   {
     "id": "ganzle2014",
@@ -151,7 +161,9 @@
     ],
     "url": "https://www.kingarthurbaking.com/guides/sourdough/create",
     "summary": "A step-by-step guide to making a starter from flour and water over about a week, with what to expect each day, how to tell when it's ready, and fixes for common problems such as hooch and slow starters.",
-    "takeaway": "A trustworthy day-by-day plan for a first starter. A starter is ready when it reliably doubles within 4 to 8 hours of a feed."
+    "takeaway": "A trustworthy day-by-day plan for a first starter. A starter is ready when it reliably doubles within 4 to 8 hours of a feed.",
+    "starterPage": "bakers",
+    "starterOrder": 3
   },
   {
     "id": "ka-maintain",
@@ -166,7 +178,9 @@
     ],
     "url": "https://www.kingarthurbaking.com/learn/guides/sourdough/maintain",
     "summary": "How to keep a starter at room temperature or in the fridge, how much to discard and feed, and how to revive one that has slowed down.",
-    "takeaway": "For weekly baking, a starter kept in the fridge, fed once a week and refreshed a day before baking, is a low-effort routine."
+    "takeaway": "For weekly baking, a starter kept in the fridge, fed once a week and refreshed a day before baking, is a low-effort routine.",
+    "starterPage": "bakers",
+    "starterOrder": 11
   },
   {
     "id": "perfectloaf-starter",
@@ -181,7 +195,9 @@
     ],
     "url": "https://www.theperfectloaf.com/7-easy-steps-making-incredible-sourdough-starter-scratch/",
     "summary": "A widely used home-baker guide to building a starter with whole grain flour, with photos of each stage and the signs to watch for.",
-    "takeaway": "Whole grain (especially rye) helps a new starter get going faster because it brings more nutrients and microbes."
+    "takeaway": "Whole grain (especially rye) helps a new starter get going faster because it brings more nutrients and microbes.",
+    "starterPage": "bakers",
+    "starterOrder": 4
   },
   {
     "id": "ka-bakers-pct",
@@ -197,5 +213,344 @@
     "url": "https://www.kingarthurbaking.com/pro/reference/bakers-percentage",
     "summary": "Explains baker's percentages: every ingredient written as a percentage of total flour weight. It makes recipes easy to compare and to scale to any batch size.",
     "takeaway": "This is the language for scaling a recipe up to bigger batches. The Recipes page on this site shows these percentages for every recipe."
+  },
+  {
+    "id": "wink2008-part1",
+    "title": "The Pineapple Juice Solution, Part 1",
+    "authors": "Debra Wink",
+    "year": 2008,
+    "publisher": "Bread Lines (Bread Bakers Guild of America), republished on The Fresh Loaf",
+    "type": "Experiment",
+    "topics": [
+      "starter",
+      "microbiology",
+      "false rise"
+    ],
+    "url": "https://www.thefreshloaf.com/node/10856/pineapple-juice-solution-part-1",
+    "summary": "A microbiologist set out to explain why so many new starters bubble up on day two and then go quiet. Looking under the microscope, she found no yeast at all in that first burst. The gas came from bacteria that live on flour, mainly a Leuconostoc species, which thrive while the mix is close to neutral. Once the paste turned more acidic (below roughly pH 4.5) these bacteria stopped, and yeast typically showed up about a day after the pH reached around 3.5.",
+    "homeBaker": [
+      "Days 1 to 5 of a new starter",
+      "A big rise on day two is usually not yeast, and the quiet days that follow are normal. Don't give up or change everything at that point: keep feeding modestly and let the acidity build."
+    ],
+    "starterPage": "science",
+    "starterOrder": 1,
+    "short": "Wink 2008, part 1"
+  },
+  {
+    "id": "wink2008-part2",
+    "title": "The Pineapple Juice Solution, Part 2",
+    "authors": "Debra Wink",
+    "year": 2008,
+    "publisher": "Bread Lines (Bread Bakers Guild of America), republished on The Fresh Loaf",
+    "type": "Method",
+    "topics": [
+      "starter",
+      "false rise",
+      "method"
+    ],
+    "url": "https://www.thefreshloaf.com/node/10901/pineapple-juice-solution-part-2",
+    "summary": "The follow-up turns the findings into a method. Using an acidic liquid such as unsweetened pineapple juice for the first three days keeps the gassy bacteria from taking hold, so the starter moves straight on to lactic acid bacteria and yeast. Whole grain wheat or rye is used, the mix is kept warm but not above about 27 °C, and water replaces juice from day four. Yeast usually appears by day three to five, and the starter keeps improving for about two weeks. Vinegar was tested and rejected because it held back the yeast.",
+    "homeBaker": [
+      "Starting a starter",
+      "Juice is optional, but it is a reliable way to skip the false rise and the smelly early days. Don't feed more often until the starter is clearly rising: frequent large feeds dilute the acid and slow things down."
+    ],
+    "starterPage": "science",
+    "starterOrder": 2,
+    "short": "Wink 2008, part 2"
+  },
+  {
+    "id": "boreczek2020",
+    "title": "Bacterial community dynamics in spontaneous sourdoughs made from wheat, spelt, and rye wholemeal flour",
+    "authors": "Boreczek, Litwinek, Żylińska-Urban, Izak, Buksa, Gawor, Gromadka, Bardowski, Kowalczyk",
+    "year": 2020,
+    "publisher": "MicrobiologyOpen",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "flour",
+      "microbiology"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7142371/",
+    "summary": "Wholemeal wheat, spelt and rye sourdoughs were started from flour and water alone and refreshed daily at 30 °C. In the first day, cocci such as Weissella and Leuconostoc were common. By day three, lactobacilli (mainly what is now called Lactiplantibacillus plantarum and Levilactobacillus brevis) dominated all three, and the early cocci had disappeared. Bacteria outnumbered yeasts by roughly a thousand to one, and pH settled around 3.7 to 3.8.",
+    "homeBaker": [
+      "Days 1 to 7",
+      "The microbes in a new starter change quickly in the first few days. Judge it on how it behaves after several feeds, not on the first one or two."
+    ],
+    "starterPage": "science",
+    "starterOrder": 3
+  },
+  {
+    "id": "ercolini2013",
+    "title": "Microbial ecology dynamics during rye and wheat sourdough preparation",
+    "authors": "Ercolini, Pontonio, De Filippis, Minervini, La Storia, Gobbetti, Di Cagno",
+    "year": 2013,
+    "publisher": "Applied and Environmental Microbiology",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "flour",
+      "microbiology"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3837820/",
+    "summary": "Rye and wheat sourdoughs were made from scratch and refreshed daily, while DNA sequencing tracked which bacteria were present at each stage. The varied mix of bacteria that arrives on the flour was gradually replaced by a smaller group of lactic acid bacteria, and the rye and wheat sourdoughs settled into somewhat different communities.",
+    "homeBaker": [
+      "Choosing a flour",
+      "Rye and wheat starters are not the same culture with a different colour: each flour steers which microbes win. Pick the flour you plan to bake with long term and stay with it."
+    ],
+    "starterPage": "science",
+    "starterOrder": 4
+  },
+  {
+    "id": "celano2016",
+    "title": "Different flour microbial communities drive to sourdoughs characterized by diverse bacterial strains and free amino acid profiles",
+    "authors": "Celano, De Angelis, Minervini, Gobbetti",
+    "year": 2016,
+    "publisher": "Frontiers in Microbiology",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "flour",
+      "microbiology"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5099235/",
+    "summary": "Researchers used flour that had been irradiated to knock out most of its microbes, then added back selected flour microbes in different combinations. The sourdoughs that resulted differed in their bacteria and in their acidity and flavour compounds, showing that the microbes carried on the flour itself are the main seed of a new starter. A strain added on purpose did not always survive.",
+    "homeBaker": [
+      "Choosing a flour",
+      "Flour is where your starter's microbes come from, so fresh, good-quality flour (ideally whole grain for the start) matters more than any additive or 'starter booster'."
+    ],
+    "starterPage": "science",
+    "starterOrder": 10
+  },
+  {
+    "id": "minervini2019",
+    "title": "Tap water is one of the drivers that establish and assembly the lactic acid bacterium biota during sourdough preparation",
+    "authors": "Minervini, Dinardo, De Angelis, Gobbetti",
+    "year": 2019,
+    "publisher": "Scientific Reports",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "water",
+      "microbiology"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6345887/",
+    "summary": "Ten different Italian tap waters were used to start sourdoughs with the same flour. The water changed how fast the dough acidified and which lactobacilli became dominant. Depending on the water, pH dropped below 4.5 within two to four refreshments and levelled off after six to eight. In an already mature sourdough, the water made much less difference.",
+    "homeBaker": [
+      "Water",
+      "Use the same water every time while building a starter. Ordinary tap water works; if it smells strongly of chlorine, let it stand in an open jug for a few hours."
+    ],
+    "starterPage": "science",
+    "starterOrder": 11
+  },
+  {
+    "id": "minervini2018",
+    "title": "Lactic acid bacterium population dynamics in artisan sourdoughs over one year of daily propagations is mainly driven by flour microbiota and nutrients",
+    "authors": "Minervini, Dinardo, Celano, De Angelis, Gobbetti",
+    "year": 2018,
+    "publisher": "Frontiers in Microbiology",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "flour",
+      "temperature",
+      "microbiology"
+    ],
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2018.01984/full",
+    "summary": "Three bakery sourdoughs in southern Italy were sampled six times over a year of daily feeding. The dominant species stayed the same, but the individual strains kept turning over, driven mostly by the flour each bakery used. Warmer fermentation went with more lactic acid and a lower pH.",
+    "homeBaker": [
+      "Long-term care",
+      "Even a mature starter keeps shifting slowly. Consistent flour and temperature keep it predictable, and a warmer spot will make it more sour."
+    ],
+    "starterPage": "science",
+    "starterOrder": 12
+  },
+  {
+    "id": "carbonetto2020",
+    "title": "Interactions between Kazachstania humilis yeast species and lactic acid bacteria in sourdough",
+    "authors": "Carbonetto, Nidelet, Guezenec, Perez, Segond, Sicard",
+    "year": 2020,
+    "publisher": "Microorganisms",
+    "type": "Study",
+    "topics": [
+      "starter",
+      "microbiology",
+      "yeast"
+    ],
+    "url": "https://www.mdpi.com/2076-2607/8/2/240",
+    "summary": "Pairs of sourdough yeasts and bacteria were grown together in dough to see how they affect each other. Yeast numbers usually fell when bacteria were present, while the bacteria were barely affected, so the relationship is less of a friendly partnership than often claimed. A typical sourdough yeast, Kazachstania humilis, together with gas-producing lactobacilli, raised dough about as well as baker's yeast species did.",
+    "homeBaker": [
+      "Understanding your starter",
+      "The bacteria in a starter far outnumber the yeast and can hold it back. That is why a starter needs regular fresh flour: each feed gives the yeast room to grow before the acid builds up again."
+    ],
+    "starterPage": "science",
+    "starterOrder": 13
+  },
+  {
+    "id": "lau2021",
+    "title": "Sourdough microbiome comparison and benefits",
+    "authors": "Lau, Chong, Chin, Talib, Basha",
+    "year": 2021,
+    "publisher": "Microorganisms",
+    "type": "Review",
+    "topics": [
+      "starter",
+      "microbiology",
+      "flour"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8306212/",
+    "summary": "A review of studies on how sourdough microbes develop. Across many studies, a new sourdough moves through a sequence of bacteria before lactobacilli take over, and wheat, rye and spelt sourdoughs typically reached maturity in about five to seven days of refreshing. Flours with more bran and minerals (such as rye and whole grain) support a more lively and diverse fermentation. In a mature sourdough, lactic acid bacteria outnumber yeasts by roughly a hundred to one.",
+    "homeBaker": [
+      "Choosing a flour",
+      "Whole grain and rye flour give a new starter more food and more microbes, which is why they usually get going faster than white flour."
+    ],
+    "starterPage": "science",
+    "starterOrder": 14
+  },
+  {
+    "id": "seriouseats-flour",
+    "title": "The best flour for sourdough starters: an investigation",
+    "authors": "Tim Chin",
+    "year": 2020,
+    "publisher": "Serious Eats",
+    "type": "Test",
+    "topics": [
+      "starter",
+      "flour",
+      "test"
+    ],
+    "url": "https://www.seriouseats.com/the-best-flour-for-sourdough-starters-an-investigation",
+    "summary": "Five starters were built side by side at 100% hydration and about 26 °C: all-purpose, whole wheat, rye, and two 50/50 blends. Feeds stepped up from 1:1:1 daily to twice daily and then to larger ratios. Rye matured fastest, white flour slowest and mildest. All five were then used to bake the same loaf; the tester's favourite came from the 50/50 whole wheat and white starter.",
+    "homeBaker": [
+      "Choosing a flour",
+      "Rye wins on speed, a whole wheat and white blend gave the best bread in this test. That is a good reason to test more than one starter at once."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 1
+  },
+  {
+    "id": "sourdoughjourney-flour",
+    "title": "White, wheat or rye: what is the best flour to feed your starter?",
+    "authors": "Tom Cucuzza",
+    "year": 2023,
+    "publisher": "The Sourdough Journey",
+    "type": "Test",
+    "topics": [
+      "starter",
+      "flour",
+      "test"
+    ],
+    "url": "https://thesourdoughjourney.com/white-wheat-or-rye-what-is-the-best-flour-to-feed-your-starter/",
+    "summary": "A home test fed one mature starter with bread flour, whole wheat or rye at 1:1:1 and about 20 °C, and measured the gas each produced. Bread flour and rye peaked after about 12 hours and whole wheat after about 14. Over a full day, the bread flour and whole wheat feeds produced clearly more gas than rye. The author notes it was a single run.",
+    "homeBaker": [
+      "Feeding a mature starter",
+      "Once a starter is established, plain white flour feeds it perfectly well. Whole grain is most useful at the very start."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 2
+  },
+  {
+    "id": "wildyeast-raising",
+    "title": "Raising a starter",
+    "authors": "Susan (Wild Yeast blog)",
+    "year": null,
+    "publisher": "Wild Yeast",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "method"
+    ],
+    "url": "https://www.wildyeastblog.com/raising-a-starter/",
+    "summary": "Starts with equal parts rye and white flour at 100% hydration in a warm spot (about 27 °C), refreshed every 12 hours from day two and moved to white flour only around day four. The guide warns that a big rise on day two is Leuconostoc, not yeast, and harmless. The starter is ready when it doubles in eight hours or less and smells pleasantly sour, usually after five to seven days.",
+    "homeBaker": [
+      "Starting a starter",
+      "A rye and white blend combines rye's quick start with an easy-to-read white starter later on."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 5
+  },
+  {
+    "id": "modernist-starter",
+    "title": "How to make sourdough starter",
+    "authors": "Modernist Cuisine team",
+    "year": 2025,
+    "publisher": "Modernist Cuisine",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "method",
+      "test"
+    ],
+    "url": "https://modernistcuisine.com/mc/how-to-make-sourdough-starter/",
+    "summary": "The Modernist Cuisine team reports from their own trials: rye flour gets a starter ready a few days sooner than white flour, adding raisin water made no difference, and very high-gluten flours are best avoided. They keep starters at about 21 to 24 °C, feed once a day when it is cool and twice when it is warm, and found that sourness levels off after about ten days.",
+    "homeBaker": [
+      "Starting a starter",
+      "Skip the tricks such as raisins or grapes. Flour, water, a steady temperature and patience do the work."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 6
+  },
+  {
+    "id": "atk-starter",
+    "title": "Nurture a sourdough starter for old-world bread",
+    "authors": "America's Test Kitchen",
+    "year": null,
+    "publisher": "America's Test Kitchen",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "method",
+      "test"
+    ],
+    "url": "https://www.americastestkitchen.com/articles/how-to-make-sourdough-starter",
+    "summary": "America's Test Kitchen found that a 50/50 whole wheat and white flour mix gets going faster than white flour alone, and that feeding once every 24 hours is enough while the starter develops. Expect 10 to 14 days until the starter reliably doubles 8 to 12 hours after a feed. After that, a weekly feed with fridge storage keeps it going.",
+    "homeBaker": [
+      "Fitting a starter into a working week",
+      "Once-a-day feeding is enough to build a starter, which suits a full-time job. A weekly feed in the fridge is enough to keep it."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 7
+  },
+  {
+    "id": "davis-rye",
+    "title": "How to make a rye sourdough starter from scratch",
+    "authors": "Holly Davis (excerpt from Ferment, Chronicle Books)",
+    "year": 2017,
+    "publisher": "CBC Life",
+    "type": "Guide",
+    "topics": [
+      "starter",
+      "rye",
+      "method"
+    ],
+    "url": "https://www.cbc.ca/1.5157991",
+    "summary": "A rye-only starter at a fairly wet 150% hydration, kept at 23 to 28 °C. After the first day, almost all of it is discarded and the remaining spoonful is fed fresh rye and water once or twice a day. Ready when it doubles reliably within 6 to 10 hours, which the author expects after two to three weeks.",
+    "homeBaker": [
+      "Rye starters",
+      "A wetter rye starter is easier to stir and to read. Small amounts (a spoonful kept back) mean very little waste."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 8,
+    "short": "Holly Davis (CBC)"
+  },
+  {
+    "id": "breadtopia-wholegrain",
+    "title": "Experiment time: comparing whole grain starter feeds",
+    "authors": "Benny (Breadtopia forum)",
+    "year": 2021,
+    "publisher": "Breadtopia Forum",
+    "type": "Test",
+    "topics": [
+      "starter",
+      "flour",
+      "test"
+    ],
+    "url": "https://forum.breadtopia.com/t/experiment-time-comparing-whole-grain-starter-feeds/22495",
+    "summary": "A forum baker fed the same starter at 1:2:2 with whole rye, whole red fife wheat, and red fife with a little diastatic malt, at about 23 °C. After six hours they had risen 2.5, 2.6 and 2.2 times. Other bakers pointed out a flaw: at the same hydration a rye starter is much thicker than a wheat one, so its rise is not directly comparable.",
+    "homeBaker": [
+      "Measuring your tests",
+      "Compare like with like. Rise height is a fair test only between starters of the same flour and thickness, so note smell, bubbles and time to peak as well."
+    ],
+    "starterPage": "bakers",
+    "starterOrder": 9
   }
 ]
