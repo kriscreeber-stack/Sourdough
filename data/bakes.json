@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-11-22",
+    "title": "Country loaf, second try",
+    "recipe": "country-loaf",
+    "rating": 4,
+    "summary": "Better oven spring than last week after a longer bulk ferment. Crumb still a little tight near the base.",
+    "nextTime": "Preheat the Dutch oven 15 minutes longer.",
+    "photo": "https://images.unsplash.com/photo-1767065887348-6e76f3338c80?auto=format&fit=crop&w=900&q=80",
+    "example": true
+  },
+  {
+    "date": "2026-11-15",
+    "title": "First loaf",
+    "recipe": "country-loaf",
+    "rating": 3,
+    "summary": "Flat but tasty. The starter was not quite at its peak when I mixed the levain.",
+    "nextTime": "Mix when the starter has doubled and smells sweet, not sour.",
+    "photo": "https://images.unsplash.com/photo-1597604391235-a7429b4b350c?auto=format&fit=crop&w=900&q=80",
+    "example": true
+  }
+]

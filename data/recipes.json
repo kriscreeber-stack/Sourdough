@@ -1,0 +1,25 @@
+[
+  {
+    "id": "country-loaf",
+    "name": "Country loaf",
+    "yield": "1 loaf, about 900 g",
+    "intro": "A simple everyday loaf with a little whole wheat for flavour. This is the recipe I am learning on.",
+    "ingredients": [
+      { "name": "Bread flour", "grams": 450, "flour": true },
+      { "name": "Whole wheat flour", "grams": 50, "flour": true },
+      { "name": "Water", "grams": 375 },
+      { "name": "Levain (100% hydration)", "grams": 100 },
+      { "name": "Salt", "grams": 10 }
+    ],
+    "method": [
+      { "when": "Evening, day 1", "step": "Feed the starter so it peaks in the morning." },
+      { "when": "08:00", "step": "Mix flour and 350 g of the water. Rest 45 minutes (autolyse)." },
+      { "when": "08:45", "step": "Add levain, salt and the remaining 25 g water. Squeeze until combined." },
+      { "when": "09:00 to 13:00", "step": "Bulk ferment at about 24 °C. Four sets of stretch and folds in the first two hours." },
+      { "when": "13:00", "step": "Pre-shape, rest 20 minutes, then shape and place in a floured banneton." },
+      { "when": "Overnight", "step": "Cold proof in the fridge for 12 to 16 hours." },
+      { "when": "Day 2", "step": "Bake in a preheated Dutch oven at 250 °C: 20 minutes lid on, 20 to 25 minutes lid off at 230 °C." }
+    ],
+    "example": true
+  }
+]
