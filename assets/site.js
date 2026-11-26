@@ -1,5 +1,5 @@
 // Renders the site's content from the JSON files in /data.
-// To add a bake or recipe, edit data/bakes.json or data/recipes.json. No code changes needed.
+// To add a bake, recipe or research entry, edit the corresponding JSON file. No code changes needed.
 (function () {
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const fmtDate = (d) => {
@@ -12,13 +12,12 @@
 
   function bakeCard(b, recipes) {
     const recipe = recipes.find((r) => r.id === b.recipe);
-    const stars = "●".repeat(b.rating || 0) + "○".repeat(5 - (b.rating || 0));
     const photo = b.photo
       ? `<div class="photo"><img src="${esc(b.photo)}" alt="${esc(b.title)}" loading="lazy"></div>`
       : `<div class="photo" aria-hidden="true">Photo to come</div>`;
     return `<article class="bake">
       ${photo}
-      <div class="meta"><time datetime="${esc(b.date)}">${esc(fmtDate(b.date))}</time>${recipe ? `<span>${esc(recipe.name)}</span>` : ""}<span class="rating" aria-label="Rated ${b.rating} of 5">${stars}</span></div>
+      <div class="meta"><time datetime="${esc(b.date)}">${esc(fmtDate(b.date))}</time>${recipe ? `<span>${esc(recipe.name)}</span>` : ""}<span class="rating" aria-label="Rated ${b.rating} of 5">${"●".repeat(b.rating || 0)}${"○".repeat(5 - (b.rating || 0))}</span></div>
       <h3>${esc(b.title)}</h3>
       <p>${esc(b.summary)}</p>
       ${b.nextTime ? `<p class="when">Next time: ${esc(b.nextTime)}</p>` : ""}
@@ -46,6 +45,17 @@
     </article>`;
   }
 
+  function researchEntry(entry) {
+    const year = entry.year == null ? "Year not listed" : String(entry.year);
+    return `<article class="research-entry">
+      <div class="research-meta"><span class="tag">${esc(entry.type || "Resource")}</span><span>${esc(entry.publisher || "")}</span><span>${esc(year)}</span></div>
+      <h2>${esc(entry.title)}</h2>
+      <p class="research-author">${esc(entry.authors)}</p>
+      <p>${esc(entry.summary)}</p>
+      <a href="${esc(entry.url)}" target="_blank" rel="noopener noreferrer">Read the original source <span aria-hidden="true">↗</span></a>
+    </article>`;
+  }
+
   function menuBlock(m) {
     const fmt = (n) => `${m.currency} ${n.toFixed(2)}`;
     const items = m.items.map((i) => `<div class="menu-item">
@@ -57,8 +67,19 @@
 
   const fail = (el) => { el.innerHTML = '<p class="sample-note">Content could not load. If you opened this file directly, view it through the website link instead.</p>'; };
 
+  // Keep the Research page discoverable in the shared navigation on every page.
+  const nav = document.querySelector(".nav");
+  if (nav && !nav.querySelector('a[href="research.html"]')) {
+    const link = document.createElement("a");
+    link.href = "research.html";
+    link.textContent = "Research";
+    const about = nav.querySelector('a[href="about.html"]');
+    nav.insertBefore(link, about || null);
+  }
+
   const bakesEl = document.getElementById("bakes");
   const recipesEl = document.getElementById("recipes");
+  const researchEl = document.getElementById("research");
   const menuEl = document.getElementById("menu");
 
   if (bakesEl) {
@@ -73,6 +94,11 @@
     load("recipes.json").then((recipes) => {
       recipesEl.innerHTML = `<div class="stack" style="gap:4rem">${recipes.map(recipeBlock).join("")}</div>${sampleNote(recipes)}`;
     }).catch(() => fail(recipesEl));
+  }
+  if (researchEl) {
+    load("research.json").then((entries) => {
+      researchEl.innerHTML = `<div class="research-list">${entries.map(researchEntry).join("")}</div>`;
+    }).catch(() => fail(researchEl));
   }
   if (menuEl) {
     load("menu.json").then((m) => { menuEl.innerHTML = menuBlock(m); }).catch(() => fail(menuEl));
