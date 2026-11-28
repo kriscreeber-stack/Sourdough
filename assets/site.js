@@ -110,9 +110,8 @@
   }
 
   function menuBlock(m) {
-    const fmt = (n) => `${m.currency} ${n.toFixed(2)}`;
     const items = m.items.map((i) => `<div class="menu-item">
-      <h3>${esc(i.name)}</h3><span class="price">${fmt(i.price)}</span>
+      <h3>${esc(i.name)}</h3>
       <p><span class="dot${i.available && m.ordersOpen ? " on" : ""}"></span>${i.available && m.ordersOpen ? "Available this week" : "Not taking orders yet"} · ${esc(i.description)}</p>
     </div>`).join("");
     return `<div class="menu">${items}</div>`;
@@ -126,8 +125,7 @@
     const link = document.createElement("a");
     link.href = "research.html";
     link.textContent = "Research";
-    const about = nav.querySelector('a[href="about.html"]');
-    nav.insertBefore(link, about || null);
+    nav.insertBefore(link, nav.querySelector('a[href="order.html"]') || null);
   }
 
   // Keep the How to start(er) page in the shared navigation on every page.

@@ -1,9 +1,8 @@
 {
   "ordersOpen": false,
-  "currency": "CHF",
   "pickup": "Pickup on Saturday mornings",
   "items": [
-    { "id": "country", "name": "Country loaf", "description": "Bread flour with a little whole wheat. About 900 g.", "price": 9.0, "available": false },
-    { "id": "seeded", "name": "Seeded loaf", "description": "Sunflower, pumpkin and flax seeds. About 950 g.", "price": 10.5, "available": false }
+    {"id": "country", "name": "Country loaf", "description": "Bread flour with a little whole wheat. About 900 g.", "available": false},
+    {"id": "seeded", "name": "Seeded loaf", "description": "Sunflower, pumpkin and flax seeds. About 950 g.", "available": false}
   ]
 }

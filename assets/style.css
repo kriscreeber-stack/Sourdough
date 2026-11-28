@@ -123,7 +123,6 @@ ol.method li::marker { font-family: var(--font-data); color: var(--crust); }
 /* Order (phase 2) */
 .menu { display: grid; gap: 0; }
 .menu-item { display: grid; grid-template-columns: 1fr auto; gap: .25rem 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
-.menu-item .price { font-family: var(--font-data); white-space: nowrap; }
 .menu-item p { color: var(--muted); font-size: .95rem; grid-column: 1 / -1; }
 .notice { background: var(--surface); border-radius: var(--radius); padding: 1.25rem 1.4rem; display: grid; gap: .5rem; }
 .dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; background: var(--muted); margin-right: .4rem; vertical-align: middle; }

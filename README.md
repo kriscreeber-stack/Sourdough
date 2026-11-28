@@ -10,13 +10,13 @@ All the content lives in the `data` folder. You can edit these files right on gi
 - `data/recipes.json`: recipes with weights in grams. Baker's percentages are worked out for you.
 - `data/starters.json`: the three test starter recipes on the How to start(er) page.
 - `data/research.json`: research library. Entries with `"starterPage": "science"` or `"bakers"` also appear on the How to start(er) page, in that column.
-- `data/menu.json`: loaves and CHF prices for ordering later. `ordersOpen` stays `false` until ordering starts.
+- `data/menu.json`: planned loaves for ordering later. `ordersOpen` stays `false` until ordering starts.
 
 To add a photo, upload it into a `photos` folder and set `"photo": "photos/your-file.jpg"` on the bake.
 
 ## Pages
 
-`index.html` (home), `bakes.html`, `recipes.html`, `starter.html` (How to start(er)), `research.html`, `about.html`, `order.html`. Styles are in `assets/style.css`, and `assets/site.js` turns the data files into pages.
+`index.html` (home), `bakes.html`, `recipes.html`, `starter.html` (How to start(er)), `research.html`, `order.html`. Styles are in `assets/style.css`, and `assets/site.js` turns the data files into pages.
 
 ## Asking GitHub Copilot to make changes
 
