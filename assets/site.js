@@ -109,14 +109,6 @@
     </article>`;
   }
 
-  function menuBlock(m) {
-    const items = m.items.map((i) => `<div class="menu-item">
-      <h3>${esc(i.name)}</h3>
-      <p><span class="dot${i.available && m.ordersOpen ? " on" : ""}"></span>${i.available && m.ordersOpen ? "Available this week" : "Not taking orders yet"} · ${esc(i.description)}</p>
-    </div>`).join("");
-    return `<div class="menu">${items}</div>`;
-  }
-
   const fail = (el) => { el.innerHTML = '<p class="sample-note">Content could not load. If you opened this file directly, view it through the website link instead.</p>'; };
 
   // Keep the Research page discoverable in the shared navigation on every page.
@@ -125,7 +117,7 @@
     const link = document.createElement("a");
     link.href = "research.html";
     link.textContent = "Research";
-    nav.insertBefore(link, nav.querySelector('a[href="order.html"]') || null);
+    nav.appendChild(link);
   }
 
   // Keep the How to start(er) page in the shared navigation on every page.
@@ -139,7 +131,6 @@
   const bakesEl = document.getElementById("bakes");
   const recipesEl = document.getElementById("recipes");
   const researchEl = document.getElementById("research");
-  const menuEl = document.getElementById("menu");
 
   if (bakesEl) {
     Promise.all([load("bakes.json"), load("recipes.json")]).then(([bakes, recipes]) => {
@@ -171,9 +162,6 @@
       if (bak) bak.innerHTML = `<div class="research-list">${pick("bakers").map(researchEntry).join("")}</div>`;
       if (location.hash) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
     }).catch(() => fail(startersEl));
-  }
-  if (menuEl) {
-    load("menu.json").then((m) => { menuEl.innerHTML = menuBlock(m); }).catch(() => fail(menuEl));
   }
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();

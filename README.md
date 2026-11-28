@@ -10,13 +10,12 @@ All the content lives in the `data` folder. You can edit these files right on gi
 - `data/recipes.json`: recipes with weights in grams. Baker's percentages are worked out for you.
 - `data/starters.json`: the three test starter recipes on the How to start(er) page.
 - `data/research.json`: research library. Entries with `"starterPage": "science"` or `"bakers"` also appear on the How to start(er) page, in that column.
-- `data/menu.json`: planned loaves for ordering later. `ordersOpen` stays `false` until ordering starts.
 
 To add a photo, upload it into a `photos` folder and set `"photo": "photos/your-file.jpg"` on the bake.
 
 ## Pages
 
-`index.html` (home), `bakes.html`, `recipes.html`, `starter.html` (How to start(er)), `research.html`, `order.html`. Styles are in `assets/style.css`, and `assets/site.js` turns the data files into pages.
+`index.html` (home), `bakes.html`, `recipes.html`, `starter.html` (How to start(er)), `research.html`. Styles are in `assets/style.css`, and `assets/site.js` turns the data files into pages.
 
 ## Asking GitHub Copilot to make changes
 
@@ -24,7 +23,7 @@ To add a photo, upload it into a `photos` folder and set `"photo": "photos/your-
 
 - "In data/bakes.json, add a bake from 30 November 2026 called 'Seeded loaf', rated 4, with the summary '…'."
 - "Change the home page heading to 'Bread worth waiting for'."
-- "Make the Order page say we bake on Fridays instead of Saturdays."
+- "On the Recipes page, change the bulk ferment temperature to 25 °C."
 
 Copilot suggests the change. Then you apply it: open the file, click the pencil icon, paste the change, and click **Commit changes**.
 
